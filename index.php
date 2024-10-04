@@ -35,10 +35,59 @@ session_start();
         </div>
     </nav>
 
-    <div class="container mt-4">
-        <h1>Welcome to the Task Management System</h1>
-        <p>This application allows you to manage your tasks effectively.</p>
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Welcome to the Task Management System</h1>
+            <p class="lead">Manage your tasks effectively and boost your productivity.</p>
+        </div>
+    </header>
+
+    <div class="container mt-5">
+        <h2 class="text-center">What You Can Do</h2>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Task Creation</h5>
+                        <p class="card-text">Easily create and manage your tasks with a user-friendly interface.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Task Updates</h5>
+                        <p class="card-text">Update task status, edit details, or delete tasks effortlessly.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Task Filtering</h5>
+                        <p class="card-text">Filter tasks based on status to view completed, in-progress, or pending tasks.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-5">
+            <h2 class="text-center">Future Features</h2>
+            <ul class="list-group">
+                <li class="list-group-item">✔️ Enhanced User Profiles</li>
+                <li class="list-group-item">✔️ Team Collaboration Tools</li>
+                <li class="list-group-item">✔️ Notifications and Reminders</li>
+                <li class="list-group-item">✔️ Advanced Analytics Dashboard</li>
+            </ul>
+        </div>
     </div>
+
+    <footer class="bg-light text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2024 Task Management System. All rights reserved.</p>
+            <p class="mb-0">Follow us on <a href="#" class="text-primary">Twitter</a>, <a href="#" class="text-primary">Facebook</a>, <a href="#" class="text-primary">Instagram</a>.</p>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.11/dist/umd/popper.min.js"></script>
