@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <title>Login</title>
 </head>
 <body>
-    <div class="container mt-5">
+    <div class="container mt-5 ">
         <h2 class="text-center">Login</h2>
         <?php if ($error): ?>
             <div class="alert alert-danger" role="alert">

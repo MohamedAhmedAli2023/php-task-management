@@ -10,16 +10,16 @@ if (!isset($_SESSION['user_id'])) {
 // Include database connection
 include('../includes/db.php');
 
-// Add task process
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $title = $_POST['title'];
     $description = $_POST['description'];
     $user_id = $_SESSION['user_id'];
 
-    // Insert task into the database
-    $stmt = $pdo->prepare("INSERT INTO tasks (user_id, title, description) VALUES (?, ?, ?)");
-    if ($stmt->execute([$user_id, $title, $description])) {
-        header("Location: dashboard.php");
-        exit();
-    }
+    // Insert the new task into the database
+    $stmt = $pdo->prepare("INSERT INTO tasks (title, description, status, user_id) VALUES (?, ?, 'Pending', ?)");
+    $stmt->execute([$title, $description, $user_id]);
+
+    header("Location: dashboard.php");
+    exit();
 }
+?>
