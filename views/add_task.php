@@ -7,7 +7,7 @@ if (!isset($_SESSION['user_id'])) {
     exit();
 }
 
-// Include database connection
+// Include database connection 
 include('../includes/db.php');
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {

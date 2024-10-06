@@ -84,7 +84,7 @@ session_start();
 
     <footer class="bg-light text-center py-4 mt-5">
         <div class="container">
-            <p class="mb-0">&copy; 2024 Task Management System. All rights reserved.</p>
+            <p class="mb-0">&copy; Mohamed Ahmed Ali. All rights reserved.</p>
             <p class="mb-0">Follow us on <a href="#" class="text-primary">Twitter</a>, <a href="#" class="text-primary">Facebook</a>, <a href="#" class="text-primary">Instagram</a>.</p>
         </div>
     </footer>

@@ -1,5 +1,4 @@
 <?php
-// Database configuration
 $host = 'localhost'; 
 $db_name = 'task_management'; 
 $username = 'root'; 
